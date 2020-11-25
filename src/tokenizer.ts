@@ -1,9 +1,8 @@
 import Token from './utils/token'
+import { Pattern } from './utils/utils'
 
 export default class Tokenizer {
-  constructor(
-    private patterns: { regex: RegExp; tag: string; hasLexVal: boolean }[]
-  ) {}
+  constructor(private patterns: Pattern[]) {}
 
   private _tokenize(str: string): Token[] {
     let pos: number = 0

@@ -14,6 +14,9 @@ export interface IItem {
   items: ActionType[] | GotoBlock[]
 }
 
+// tokenizer
+export type Pattern = { regex: RegExp; tag: string; hasLexVal: boolean }
+
 // GOTO Table types
 type GotoBlock = { newState: string; nameState: string }
 
