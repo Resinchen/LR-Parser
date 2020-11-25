@@ -1,8 +1,12 @@
 {
   "name": "lrparser",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "simple LR(1)-parser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Resinchen/LR-Parser.git"
+  },
+  "main": "public/bundle.js",
   "scripts": {
     "build": "webpack",
     "start": "npm run build & node public/bundle.js"
