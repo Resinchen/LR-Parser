@@ -1,18 +1,28 @@
 {
-  "name": "lrparser",
-  "version": "1.0.0",
-  "description": "simple LR(1)-parser",
+  "name": "lrparser-vnts",
+  "version": "1.0.1",
+  "description": "Simple LR(1)-parser",
   "repository": {
     "type": "git",
     "url": "https://github.com/Resinchen/LR-Parser.git"
   },
-  "main": "public/bundle.js",
+  "types": "lib",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "npm run build & node public/bundle.js"
+    "build-webpack": "webpack",
+    "build": "tsc -p .",
+    "start": "npm run build-webpack & node public/bundle.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "lrparser"
+  ],
+  "author": {
+    "name": "Alexander Chernetsov",
+    "email": "alex1410alex@gmail.com"
+  },
+  "files": [
+    "lib"
+  ],
   "license": "ISC",
   "devDependencies": {
     "prettier": "^2.1.2",

@@ -13,7 +13,7 @@ export default class ActionTable extends Table<State, Token, Action> {
     const { stateName, items: actions } = desc
     const row = new State(stateName)
     actions.forEach(item => {
-      const { type, fromState, toState } = item
+      const { type, fromState } = item
       const col = new Token(fromState)
       const action: Action = this.getActionByType(type, item)
 
