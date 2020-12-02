@@ -1,6 +1,6 @@
 {
   "name": "lrparser-vnts",
-  "version": "1.0.1",
+  "version": "1.0.1b",
   "description": "Simple LR(1)-parser",
   "repository": {
     "type": "git",
