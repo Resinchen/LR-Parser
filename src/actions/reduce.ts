@@ -13,7 +13,7 @@ export default class Reduce extends Action {
   }
 
   make_reduce(args: State[]): State {
-    const newState: State = this.toState
+    const newState: State = new State(this.toState.name)
     const funcResult = this.func(...args)
 
     funcResult.forEach((v, k) => newState.attr.set(k, v))
